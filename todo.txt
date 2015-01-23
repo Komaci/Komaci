@@ -1,0 +1,9 @@
+ToDo :
+------------------
+ - review method/api names
+ - add ObservableGraph interface 
+ - add IUndirectedGraphView or IImmutableUndirectedGraph
+ - consider forcing == or IEquatable for V vertex types
+ - do we need IEdgeFactory att all ? May be 'new' contstraint in generics would be enough
+ - implemenet RX observables
+ - add tryXXX methods 

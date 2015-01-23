@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{571CAED5-4C1B-4A57-8443-49A9B0396BF2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{FE27AB9D-DF37-4865-969B-34458B92AA52}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Komaci.Core", "src\Komaci.Core\Komaci.Core.csproj", "{A7167AAF-0AD5-41C6-8367-16480C564DC6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{8BE0D369-A9BC-4D8C-99FE-6778499C393B}"
+	ProjectSection(SolutionItems) = preProject
+		todo.txt = todo.txt
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "samples", "samples", "{35544D2D-B7EE-4DC1-A3B4-2AD6B69AB9FC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Komaci.CompleteGraphSample", "samples\Komaci.CompleteGraphSample\Komaci.CompleteGraphSample.csproj", "{7B589562-10B7-45DD-AC2F-E297D2D4D84A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A7167AAF-0AD5-41C6-8367-16480C564DC6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A7167AAF-0AD5-41C6-8367-16480C564DC6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A7167AAF-0AD5-41C6-8367-16480C564DC6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A7167AAF-0AD5-41C6-8367-16480C564DC6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7B589562-10B7-45DD-AC2F-E297D2D4D84A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7B589562-10B7-45DD-AC2F-E297D2D4D84A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7B589562-10B7-45DD-AC2F-E297D2D4D84A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7B589562-10B7-45DD-AC2F-E297D2D4D84A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{A7167AAF-0AD5-41C6-8367-16480C564DC6} = {FE27AB9D-DF37-4865-969B-34458B92AA52}
+		{7B589562-10B7-45DD-AC2F-E297D2D4D84A} = {35544D2D-B7EE-4DC1-A3B4-2AD6B69AB9FC}
+	EndGlobalSection
+EndGlobal
