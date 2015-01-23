@@ -43,8 +43,14 @@ namespace Komaci.Core
         /// </summary>
         IEdgeFactory<V, E> EdgeFactory { get; }
 
+        /// <summary>
+        /// Gets all edges in the graph.
+        /// </summary>
         IEnumerable<E> Edges { get; }
 
+        /// <summary>
+        /// Gets all vertices in the graph.
+        /// </summary>
         IEnumerable<V> Vertices { get; }
 
         /// <summary>
@@ -59,9 +65,25 @@ namespace Komaci.Core
         /// </remarks>
         E GetEdge(V sourceVertex, V targetVertex);
 
+        /// <summary>
+        /// Creates a new edge in the graph, going from the source vertex to the 
+        /// target vertex, and returns the created edge. 
+        /// If the graph already contains an edge from the specified source to the 
+        /// specified target, than method does not change the graph and returns <c>default(E)</c>.
+        /// </summary>
+        /// <param name="sourceVertex">Source vertex of the edge.</param>
+        /// <param name="targetVertex">Target vertex of the edge.</param>
+        /// <returns>
+        /// The newly created edge if added to the graph, otherwise <c>default(E)</c>.
+        /// </returns>
+        /// <remarks>
+        /// The source and target vertices must already be contained in the graph. 
+        /// If vertices are not found in graph <see cref="System.ArgumentException" /> is thrown.
+        /// </remarks>
+        /// <seealso cref="IGraph.EdgeFactory"/>
+        E AddEdge(V sourceVertex, V targetVertex);
         // TODO::consider returning bool to indicate whether edge was added or not
         // and have another method that will add and return added edge
-        E AddEdge(V sourceVertex, V targetVertex);
 
         bool AddEdge(V sourceVertex, V targetVertex, E edge);
 
@@ -95,8 +117,29 @@ namespace Komaci.Core
 
         bool RemoveVertex(V vertex);
 
+        /// <summary>
+        /// Returns the source vertex of an edge.
+        /// <para>
+        /// For an undirected graph, source and target are distinguishable designations 
+        /// (but without any mathematical meaning).
+        /// </para>
+        /// </summary>
+        /// <param name="edge">Edge of interest.</param>
+        /// <returns>
+        /// Source vertex of the edge.
+        /// </returns>
         V GetEdgeSource(E edge);
 
+        /// <summary>
+        /// Returns the target vertex of an edge.
+        /// <para>
+        /// For an undirected graph, source and target are distinguishable designations 
+        /// (but without any mathematical meaning).
+        /// </para>
+        /// <param name="edge">Edge of interest.</param>
+        /// <returns>
+        /// Target vertex of the edge.
+        /// </returns>
         V GetEdgeTarget(E edge);
 
         // TODO::consider adding this
